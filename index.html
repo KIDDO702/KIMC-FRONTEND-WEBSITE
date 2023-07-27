@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Institute of Mass Communication</title>
+
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- splide-js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- alpinejs -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-blue-50 antialised">
+    <nav class="z-10 sticky top-0 drop-shadow" x-data="{ sidebar:false }">
+        <div class="bg-primary py-2">
+           <img src="logo.png" alt="logo" class="mx-auto w-[250px] md:w-[20%]"> 
+        </div>
+        <div class="bg-lightGray py-3">
+            <ul class="text-xl hidden uppercase lg:flex lg:items-center lg:justify-center lg:space-x-32">
+                <li>
+                    <a href="#" class="hover:text-darkBlue">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-darkBlue">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-darkBlue">Academics</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-darkBlue">Students</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-darkBlue">Ecn Radio</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-darkBlue">Contact Us</a>
+                </li>
+            </ul>
+
+            <button class="lg:hidden border border-darkBlue py-1.5 px-2 ml-3 rounded" @click="sidebar = !sidebar">
+                <i class="fa-solid fa-bars text-xl text-darkBlue"></i>
+            </button>
+        </div>
+
+        <ul class="w-full pb-2 text-white space-y-3 divide-y divide-darkBlue px-3 lg:hidden bg-lightGray" x-show="sidebar" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-in duration-300 trasnform" x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full" x-cloak>
+            <li>
+                <a href="#" class="text-darkBlue">Home</a>
+            </li>
+            <li>
+                <a href="#" class="text-darkBlue">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="text-darkBlue">Academics</a>
+            </li>
+            <li>
+                <a href="#" class="text-darkBlue">Students</a>
+            </li>
+            <li>
+                <a href="#" class="text-darkBlue">Ecn Radio</a>
+            </li>
+            <li>
+                <a href="#" class="text-darkBlue">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <section class="splide" aria-label="Hero Slider">
+        <div class="splide__track">
+            <div class="splide__list">
+                <div class="splide__slide">
+                    <div class="w-full relative">
+                        <img src="images/slide1.jpg" alt="" class="bg-darkBlue bg-opacity-90">
+                        <div class="absolute bg-darkBlue left-0 z-10">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id corporis rerum nobis velit, natus laborum non quasi tempore dolore repudiandae adipisci ut porro sit eum nam. Molestiae voluptatem sequi iure!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="splide__slide">
+                    <img src="images/slide2.jpg" alt="">
+                </div>
+                <div class="splide__slide">
+                    <div class="w-full relative">
+                        <div class="absolute bg-darkBlue bg-opacity-50">
+                            <img src="images/slide4.JPG.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container flex flex-col px-5 md:px-3 lg:flex-row lg:space-x-10 lg:px-0">
+            <div class="w-full lg:w-[45%]">
+                <img src="images/gardens.jpg" alt="about" class="w-full bg-customDark drop-shadow-md rounded-md">
+            </div>
+            <div class="w-full mt-5 lg:w-[55%] lg:mt-0">
+                <h2 class="text-3xl font-semibold tracking-[2px]">About <span class="text-secondary">Us</span></h2>
+                <p class="mt-1 lg:mt-3 leading-loose">
+                    The Kenya Institute of Mass Communication (KIMC) was established in 1961 and was named as the then Voice of Kenya Training School. Its main purpose was to train electronic engineering and technicians for the then, Kenya Broadcasting Service (KBS), that was later rebranded in 1962 as the Kenya Broadcasting Corporation (KBC). KBC was then nationalized in 1964, and changed its brand to Voice of Kenya (VOK).
+                    The institution was also to serve the Ministry of Information which equally lacked qualified journalists, program producers, announcers and other cadre relevant in the field of mass communication. 
+                </p>
+
+                <div class="mt-3 lg:mt-5">
+                    <a href="#" class="hover:text-darkBlue flex items-center">
+                        <span>Read more</span>
+                        <i class="fa-sharp fa-solid fa-arrow-right text-sx ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00a1e7',
+                        secondary: '#00a1e7',
+                        lightGray: '#e6e6e6',
+                        darkBlue: '#3d3f94'
+                    },
+                    container: {
+                        center: true
+                    }
+                }
+            }
+        }
+        
+        
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide = new Splide( '.splide' );
+            splide.mount();
+        } );
+    </script>
+
+
+</body>
+</html>

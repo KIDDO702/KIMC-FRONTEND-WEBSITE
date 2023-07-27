@@ -1,1 +1,1 @@
-# website is for KIMC SCHOOL PROJECT with css bootsrap and js
+# website is for KIMC SCHOOL PROJECT with HTML tailwind css and Alpinejs

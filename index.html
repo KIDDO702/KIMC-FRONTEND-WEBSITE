@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenya Institute of Mass Communication</title>
 
-    <!-- google-fonts -->
+    <!-- google-fonts && Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,11 +35,11 @@
 </head>
 <body class="bg-blue-50 antialised">
     <nav class="z-10 sticky top-0 drop-shadow" x-data="{ sidebar:false }">
-        <div class="bg-primary py-2">
-           <img src="logo.png" alt="logo" class="mx-auto w-[250px] md:w-[20%]"> 
+        <div class="bg-primary  py-2">
+           <img src="logo.png" alt="logo" class="mx-auto w-[250px] md:w-[25%]"> 
         </div>
-        <div class="bg-lightGray py-3">
-            <ul class="text-xl hidden uppercase lg:flex lg:items-center lg:justify-center lg:space-x-32">
+        <div class="bg-lightGray py-2.5">
+            <ul class="text-lg hidden uppercase lg:flex lg:items-center lg:justify-center lg:space-x-32">
                 <li>
                     <a href="#" class="hover:text-darkBlue">Home</a>
                 </li>
@@ -89,23 +91,75 @@
     <section class="splide" aria-label="Hero Slider">
         <div class="splide__track">
             <div class="splide__list">
-                <div class="splide__slide">
-                    <div class="w-full relative">
-                        <img src="images/slide1.jpg" alt="" class="bg-darkBlue bg-opacity-90">
-                        <div class="absolute bg-darkBlue left-0 z-10">
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id corporis rerum nobis velit, natus laborum non quasi tempore dolore repudiandae adipisci ut porro sit eum nam. Molestiae voluptatem sequi iure!
+                <div class="splide__slide relative" data-splide-interval="1000">
+                    <img src="images/slide1.jpg" alt="" class="min-w-[30%] min-h-[550px]">
+                    <div class="absolute inset-0 bg-darkBlue bg-opacity-30 flex justify-center px-2 md:px-3 lg:px-0">
+                        <div class="lg:w-[70%] text-white rounded text-center mt-40 lg:mt-60">
+                            <p class="text-4xl md:text-6xl text-lightGray mt-3">
+                                <span class="font-bold uppercase tracking-[2px] md:tracking-[5px]">
+                                    Kenya Institute Of Mass Communication
+                                </span>
                             </p>
+                            <p class="uppercase mt-4 text-lg text-lightGray bg-primary bg-opacity-60 py-1 rounded-md">
+                                We train tommorow's media practitioners
+                            </p>
+
+                            <div class="mt-10 flex items-center justify-center space-x-5">
+                                <a href="#" class="bg-primary text-white px-4 py-3 bg-opacity-70 flex items-center justify-center">
+                                    <span>Read About</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-5 ml-2">
+                                        <path fill-rule="evenodd"
+                                            d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="bg-darkBlue text-white px-4 py-3 bg-opacity-80 flex items-center justify-center">
+                                    <span>View Courses</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        class="w-7 h-7 ml-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="splide__slide">
-                    <img src="images/slide2.jpg" alt="">
+                <div class="splide__slide relative" data-splide-interval="1000">
+                    <img src="images/slide2.JPG" alt="" class="min-w-[450px] min-h-[550px]">
+                    <div class="absolute inset-0 bg-darkBlue bg-opacity-20 px-3 flex items-center justify-center lg:justify-start">
+                        <div class="w-fit text-center lg:text-start lg:w-[45%] bg-darkBlue px-6 py-5 lg:ml-16 lg:mt-56 bg-opacity-70 rounded-md">
+                            <p class="uppercase font-semibold text-2xl md:text-4xl text-lightGray tracking-[2px]">
+                                2023 September Intake Ongoing
+                            </p>
+                            <p class="mt-2 text-sm md:text-base text-lightGray font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas eos dolorem assumenda, corrupti aspernatur.</p>
+
+
+                            <div class="mt-7 flex items-center space-x-5 justify-center lg:justify-start">
+                                <a href="#" class="border-2 border-lightGray px-4 py-2 text-lightGray flex items-center justify-center hover:bg-primary">
+                                    <span class="font-semibold">Apply</span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        class="w-6 h-4 ml-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-lightGray flex items-center justify-center hover:text-primary">
+                                    <span>View Courses</span>
+                                    <span class="material-symbols-outlined ml-2">
+                                        plagiarism
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="splide__slide">
-                    <div class="w-full relative">
-                        <div class="absolute bg-darkBlue bg-opacity-50">
-                            <img src="images/slide4.JPG.jpg" alt="">
+                <div class="splide__slide relative" data-splide-interval="1000">
+                    <img src="images/slide6.JPG.jpg" alt="" class="min-w-[30%] min-h-[550px]">
+                    <div class="absolute inset-0 bg-darkBlue bg-opacity-30 flex items-center justify-center lg:justify-start">
+                        <div class="w-[75%] lg:w-[45%] mt-56 bg-darkBlue px-7 py-6 text-lightGray bg-opacity-80 rounded-r-md">
+                            <h3 class="text-2xl md:text-4xl uppercase font-semibold">STUDENT LIFE</h3>
+                            <p class="mt-3 font-light">The student life at Kenya Institute of Mass Communication is vibrant and diverse, providing students with opportunities for academic excellence, personal growth, and social engagement.</p>
                         </div>
                     </div>
                 </div>
@@ -136,29 +190,8 @@
     </section>
 
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#00a1e7',
-                        secondary: '#00a1e7',
-                        lightGray: '#e6e6e6',
-                        darkBlue: '#3d3f94'
-                    },
-                    container: {
-                        center: true
-                    }
-                }
-            }
-        }
-        
-        
-        document.addEventListener( 'DOMContentLoaded', function() {
-            var splide = new Splide( '.splide' );
-            splide.mount();
-        } );
-    </script>
+    <script src="config/tailwind.config.js"></script>
+    <script src="config/splide.config.js"></script>
 
 
 </body>

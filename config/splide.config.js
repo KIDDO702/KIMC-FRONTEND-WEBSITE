@@ -8,3 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     splide.mount();
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var splide = new Splide('.courses-splide', {
+        rewind: true,
+    });
+    splide.mount();
+});
